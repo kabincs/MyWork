@@ -1,0 +1,68 @@
+#wrapper {
+  width: 50%;
+  height: 100%;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  border: solid 1px #000;
+  margin: 0px auto;
+}
+
+.heading {
+  text-align: center;
+  background: #6f6f89;
+  color: #fff;
+  padding: 10px;
+  margin: 0px;
+}
+.progress-wrapper {
+  padding: 15px 10px;
+}
+
+.progress {
+  height: 20px;
+  width: 200px;
+  display: inline-block;
+  padding-right: 3px;
+  border: solid 2px #434141;
+  box-sizing: content-box;
+  border-radius: 20px;
+  position: relative;
+}
+.progress-controls {
+  display: inline-block;
+  padding: 5px 13px;
+  vertical-align: super;
+}
+
+.fill-color {
+  background-color: #03a9f4;
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  border-radius: 10px;
+  animation-name: example;
+  animation-duration: 5s;
+}
+#control {
+  padding: 10px;
+}
+.start-btn,
+.stop-btn,
+.replay-btn {
+  margin: 4px;
+}
+@keyframes example {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
